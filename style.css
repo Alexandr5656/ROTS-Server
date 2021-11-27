@@ -1,0 +1,43 @@
+:root {
+    background-color: rgb(114, 114, 182);
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 78vh;
+    margin: 0%;
+}
+
+header {
+    background-color: rgb(53, 53, 88);
+    grid-row: 1/2;
+    text-align: center;
+    color: white;
+}
+
+main {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 18vw 60vw 20vw;
+    padding-top: 5vh;
+}
+
+#tools {
+    grid-column: 1/2;
+    padding-left: 4vw;
+}
+
+#sample {
+    width: 4vw;
+    height: 4vh;
+}
+
+#currentRun {
+    grid-column: 2/3;
+    text-align: center;
+    padding-left: 4vw;
+}
+
+#toRun {
+    grid-column: 3/4;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot</title>
+    <script src="dataUpdate.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Robots For Life</h1>
+    </header>
+    <main>
+        <div id="tools">
+            <h1>Tools</h1>
+            <form method="get" action="./template/TemplateFiles.zip">
+                <button type="submit" id="Template">Download Template!</button>
+            </form>
+
+        </div>
+
+        <div id="currentRun">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Im9rvzTOmXA?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Instructions</h3>
+            <p>First you have to download the template zip file by clicking the "Download Template" button. After unzipping the folder open the template.py file and edit it. One edit inside the commented lines. After you're done upload the file and wait
+                for it to run. While the robot is looking for a file it will blink red. Once it has found a file the robot's leds should be off and the next file in the queue will run.</p>
+        </div>
+        <div id="toRun">
+            <h1>Submission</h1>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select a script to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload"><br>
+                <input type="submit" value="Upload Script" name="submit">
+            </form>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

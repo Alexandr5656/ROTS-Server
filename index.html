@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot</title>
+    <script src="dataUpdate.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Robots For Life</h1>
+    </header>
+    <main>
+        <div id="tools">
+            <h1>Tools</h1>
+            <form method="get" action="./template/template.zip">
+                <button type="submit" id="sample">Download Template!</button>
+            </form>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select a script to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Script" name="submit">
+            </form>
+        </div>
+
+        <div id="currentRun">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Im9rvzTOmXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p id="currentlyRunning"></p>
+        </div>
+        <div id="toRun">
+            <h1>File Queue</h1>
+            <ol id="toRunList"></ol>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
